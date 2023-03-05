@@ -1,0 +1,345 @@
+//    所有圖檔請放image/img裡面
+//    以下請按ctrl+f搜尋字詞即可找到
+//    (可以改圖 但有機率性圖無法如預期出來)
+// 工作區域-31-8 (整個頁面的背景圖)
+// 工作區域-12-8.webp (立即註冊圖示)
+// 工作區域-13-8.webp (聯繫客服圖示)
+// bg1.webp (有獎盃的背景圖)
+// BG2.webp (熱門遊戲背景圖)
+
+body {
+  // background-color: rgb(53, 53, 53);
+  margin: 0;
+  padding: 0;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+
+.main__container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.mb--50 {
+  margin-bottom: -75px;
+}
+
+.mt-100 {
+  margin-top: 125px;
+}
+
+.home {
+  overflow: hidden;
+  background-image: url(/image/img/工作區域-31-8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .home__container {
+    .home__football {
+      margin-bottom: -50px;
+      img {
+        width: 22%;
+        max-width: 100%;
+      }
+    }
+    .img__fa8--text {
+      width: 26%;
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
+    .img__game--text {
+      width: 59%;
+      max-width: 100%;
+    }
+    .home__button__container {
+      margin-top: 10%;
+      display: flex;
+      justify-content: center;
+      .register__button {
+        width: 25%;
+        margin: 0 25px;
+        background-image: url(/image/img/工作區域-12-8.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 96% auto;
+        margin-top: 10px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        a {
+          display: block;
+          height: 94px;
+          border-radius: 2px;
+        }
+      }
+      .connection__service__button {
+        margin: 0 25px;
+        width: 25%;
+        background-image: url(/image/img/工作區域-13-8.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 96% auto;
+        margin-top: 10px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        a {
+          display: block;
+          height: 94px;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+  .discount {
+    background-image: url(/image/img/bg1.webp);
+    background-size: contain;
+    max-width: 1140px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    .discount__top {
+      padding-top: 125px;
+      text-align: center;
+      img {
+        width: 300px;
+      }
+    }
+    .discount__content {
+      margin: 0 2%;
+      padding-bottom: 50px;
+      background-color: #1c1c1a;
+      border-radius: 15px;
+      .discount__img__title {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .discount__img {
+          display: block;
+          padding: 0 10px;
+          width: 25%;
+          img {
+            width: 100%;
+            max-width: 100%;
+          }
+          &:nth-child(1),
+          &:nth-child(2) {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+  .discount__football {
+    width: 20%;
+    max-width: 100%;
+    top: -75px;
+    position: relative;
+  }
+  .hot {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 25px;
+    padding-bottom: 200px;
+    .hot__title {
+      img {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+    .hot__1 {
+      padding: 50px 40px 0;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-image: url(/image/img/BG2.webp);
+      position: relative;
+      .hot__1__soccer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(50%, 50%);
+      }
+      .hot__title {
+        text-align: center;
+      }
+      .hot__content {
+        justify-content: center;
+        display: flex;
+        align-items: flex-start;
+        .hot__content__text {
+          padding-top: 75px;
+          margin: 0 -50px;
+          img {
+            width: 90%;
+            max-width: 100%;
+          }
+        }
+        .hot__content__img {
+          width: 250px;
+        }
+      }
+    }
+  }
+  @media (min-width: 991px) {
+    .loop-img{
+      display: none;
+    }
+    .hot_soccer{
+      display: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .img__fa8--text {
+      margin-bottom: 25px;
+    }
+    .discount__top {
+      padding-top: 75px !important;
+    }
+    .discount__img {
+      padding: 0 !important;
+      width: 50% !important;
+      max-width: 100% !important;
+    }
+    .img__game--text {
+      width: 59%;
+      max-width: 100%;
+    }
+    .home__container {
+      .home__button__container {
+        flex-direction: column;
+        margin-top: 5%;
+        .register__button {
+          margin: 0 auto;
+          width: 50%;
+          background-size: 50% auto;
+          min-width: 300px;
+          a {
+            height: 60px;
+          }
+        }
+        .connection__service__button {
+          min-width: 300px;
+          margin: 0 auto;
+          width: 50%;
+          background-size: 50% auto;
+          a {
+            height: 60px;
+          }
+        }
+      }
+    }
+    .hot {
+      display: none;
+      .hot__1 {
+        padding-bottom: 50px;
+        .hot__content {
+          margin-bottom: 50px;
+          flex-direction: column;
+          align-items: center;
+          .hot__content__text {
+            text-align: center;
+            padding-top: 0;
+          }
+          .hot__content__img {
+            width: auto;
+          }
+          &.around--991 {
+            flex-direction: column-reverse;
+          }
+          &.mb--50 {
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+    // .loop-img{
+    //   display: block;
+    //   margin: 0 auto;
+    //   width: 535px;
+    //   overflow: hidden;
+    //   .loop-img-container{
+    //     display: flex;
+    //     text-align: center;
+    //     transform: translate3d(0px, 0px, 0px);
+    //     animation: 30s loopimg linear  infinite;
+    //   }
+    //   @keyframes loopimg {
+    //     0%{
+    //         transform: translate3d(0px, 0px, 0px);
+    //     }
+    //     100%{
+    //         transform: translate3d(-3200px, 0px, 0px);
+    //     }
+    //   }
+    // }
+    .hot_soccer{
+      width: 20%;
+      transform: translateX(400%);
+    }
+  }
+}
+
+// -------------------swiper-------------------
+
+@media (min-width: 991px) {
+  .mySwiper{
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+  
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    object-fit: cover;
+  }
+  .swiper-slide .img {
+    text-align: center;
+  }
+  .hot__content__img{
+    display: flex;
+    justify-content: center;
+  }
+  .swiper-pagination{
+    display: none;
+  }
+}
